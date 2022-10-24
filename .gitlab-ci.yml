@@ -1,0 +1,48 @@
+# set the default docker image
+image: registry.gitlab.com/tjvb/phpimages:php81
+
+stages:
+  - prepare # prepare the cache
+  - check # check the codestyles
+#  - test
+#  - report
+
+
+prepare_cache:
+  stage: prepare
+  script:
+    # Install composer
+    - curl -sS https://getcomposer.org/installer | php
+    - php composer.phar validate
+    - php composer.phar install
+  # we use this artifact for all the jobs
+  artifacts:
+    name: "vendor"
+    paths:
+      - composer.phar
+      - vendor/*
+
+lint:
+  stage: check
+  script:
+    # lint recursive
+    - find app/ -type f -name '*.php' -exec php -l {} \; | (! grep -v "No syntax errors detected" )
+  dependencies: []
+
+pint:
+  stage: check
+  script:
+    - vendor/bin/pint
+  dependencies:
+    - prepare_cache
+  needs:
+    - prepare_cache
+
+phpmd:
+  stage: check
+  script:
+    - vendor/bin/phpmd app/ text phpmd.xml.dist
+  dependencies:
+    - prepare_cache
+  needs:
+    - prepare_cache
