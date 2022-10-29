@@ -4,8 +4,7 @@ image: registry.gitlab.com/tjvb/phpimages:php81
 stages:
   - prepare # prepare the cache
   - check # check the codestyles
-#  - test
-#  - report
+  - deploy
 
 
 prepare_cache:
@@ -46,3 +45,18 @@ phpmd:
     - prepare_cache
   needs:
     - prepare_cache
+
+deploy:
+  stage: deploy
+  before_script:
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  script:
+    - vendor/bin/dep deploy -vvv
+  environment: production
+  resource_group: production
+  only:
+    - main
