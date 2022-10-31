@@ -197,7 +197,7 @@
                 This project couldn't exist with the creation of the ElePHPants by <a class="text-blueaccent" href="http://www.elroubio.net/" target="_blank">Vincent Pontier</a>
             </p>
             <p>
-                Without <a class="text-blueaccent" href="https://www.php.net/" target="_blank">PHP</a> should this website never work.
+                Without <a class="text-blueaccent" href="https://www.php.net/" target="_blank">PHP</a> this website would not work and the ElePHPants would never have been made.
             </p>
         </div>
     </div>
