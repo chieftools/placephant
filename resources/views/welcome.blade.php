@@ -61,7 +61,7 @@
         <div id="placephant">
             <h1 class="text-blueaccent text-5xl"><a href="#placephant">#</a> Placephant</h1>
             <p>
-                Add simple placeholder with images of the different <a class="underline text-blueaccent" href="https://www.php.net/elephpant.php" target="_blank">ElePHPants</a>. You can use the placeholders while developing a new website till you have the images that are needed.
+                Add simple placeholder with images of the different <a class="underline text-blueaccent" href="https://www.php.net/elephpant.php" target="_blank">ElePHPants</a>. You can use the placeholders while developing a new website till you have the needed images.
             </p>
         </div>
         <div class="mt-4" id="usage">
@@ -78,17 +78,17 @@
                 <h3 class="text-blueaccent text-2xl"><a href="#filters">#</a> Filters</h3>
                 <p>
                     There are two filter options:<br>
-                    The first option is <span class="bg-blue-200 p-0.5">greyscale</span> (this can also be done with <span class="bg-blue-200 p-0.5">g</span> or <span class="bg-blue-200 p-0.5">bw</span>).<br>
+                    The first option is <span class="bg-blue-200 p-0.5">greyscale</span> (you can also use <span class="bg-blue-200 p-0.5">g</span> or <span class="bg-blue-200 p-0.5">bw</span>).<br>
                     The second option is <span class="bg-blue-200 p-0.5">sepia</span>.<br>
                 </p>
                 <p>
-                    The filter can be added with a query parameter: <span class="bg-gray-300 p-0.5">&lt;img src="//placephant.com/300/250?filter=greyscale"/&gt;</span>, or you can add it as first part before the sizes: <span class="bg-gray-300 p-0.5">&lt;img src="//placephant.com/greyscale/300/250"/&gt;</span>
+                    You can add a query parameter to use a filter: <span class="bg-gray-300 p-0.5">&lt;img src="//placephant.com/300/250?filter=greyscale"/&gt;</span>, or you can add it as first part before the sizes: <span class="bg-gray-300 p-0.5">&lt;img src="//placephant.com/greyscale/300/250"/&gt;</span>
                 </p>
             </div>
             <div class="mt-4" id="fit">
                 <h3 class="text-blueaccent text-2xl"><a href="#fit">#</a> Fit</h3>
                 <p>
-                    With the fit option you can decide how the image is fitted in the targeted size.
+                    With the fit option you can decide how the image will fit in the targeted size.
                 </p>
                 <ul>
                     <li><span class="bg-blue-200 p-0.5">contain</span>: Resizes the image to fit within the width and height boundaries without cropping, distorting or altering the aspect ratio.</li>
@@ -99,7 +99,7 @@
                     <li><span class="bg-blue-200 p-0.5">crop</span>: Default. Resizes the image to fill the width and height boundaries and crops any excess image data. The resulting image will match the width and height constraints without distorting the image. See the crop page for more information.</li>
                 </ul>
                 <p>
-                    The fit can be added with a query parameter: <span class="bg-gray-300 p-0.5">&lt;img src="//placephant.com/300/250?fit=max"/&gt;</span>.
+                    You can add the fit as a query parameter: <span class="bg-gray-300 p-0.5">&lt;img src="//placephant.com/300/250?fit=max"/&gt;</span>.
                 </p>
             </div>
         </div>
@@ -185,10 +185,10 @@
         <div class="mt-6 mb-6" id="credits">
             <h2 class="text-blueaccent text-3xl"><a href="#credits">#</a> Credits</h2>
             <p>
-                Placephant is created and hosted by <a class="text-blueaccent" href="https://tjvb.nl/about" target="_blank">Tobias van Beek</a>.
+                Placephant is a project created and hosted by <a class="text-blueaccent" href="https://tjvb.nl/about" target="_blank">Tobias van Beek</a>.
             </p>
             <p>
-                It is inspired on the previous project <a class="underline text-blueaccent" href="https://github.com/erikaheidi/placephant" target="_blank">https://github.com/erikaheidi/placephant</a> created by <a href="https://eheidi.dev/p/about" target="_blank"  class="text-blueaccent">Erika Heidi</a>.
+                The inspiration is from the previous project <a class="underline text-blueaccent" href="https://github.com/erikaheidi/placephant" target="_blank">https://github.com/erikaheidi/placephant</a> created by <a href="https://eheidi.dev/p/about" target="_blank"  class="text-blueaccent">Erika Heidi</a>.
             </p>
             <p>
                 The author of the Elephpant images are listed in the <a  class="text-blueaccent" href="#elephpants">Current ElePHPant photos</a> section.
@@ -197,7 +197,7 @@
                 This project couldn't exist with the creation of the ElePHPants by <a class="text-blueaccent" href="http://www.elroubio.net/" target="_blank">Vincent Pontier</a>
             </p>
             <p>
-                Without <a class="text-blueaccent" href="https://www.php.net/" target="_blank">PHP</a> this website would not work and the ElePHPants would never have been made.
+                Without <a class="text-blueaccent" href="https://www.php.net/" target="_blank">PHP</a> this website would not work and the ElePHPants would never have existed.
             </p>
         </div>
     </div>
