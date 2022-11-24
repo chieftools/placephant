@@ -3,13 +3,18 @@
     "extends": [
         "config:base"
     ],
-    "ignorePresets": [":prHourlyLimit2"],
     "labels": ["dependencies"],
     "packageRules": [
         {
+            "matchManagers": ["composer"],
+            "matchPackageNames": ["php"],
+            "enabled": false
+        },
+        {
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "matchManagers": ["composer"],
-            "automerge": true
+            "automerge": true,
+            "groupName": "PHP packages"
         }
     ],
     "configMigration": true,
