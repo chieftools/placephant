@@ -49,6 +49,16 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "phpmd": [
+            "@php vendor/bin/phpmd app/ text phpmd.xml.dist"
+        ],
+        "codestyle": [
+            "@php vendor/bin/pint"
+        ],
+        "check-all": [
+            "@codestyle",
+            "@phpmd"
         ]
     },
     "extra": {
