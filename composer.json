@@ -16,10 +16,10 @@
     "require-dev": {
         "deployer/deployer": "7.2.1",
         "fakerphp/faker": "1.21.0",
-        "laravel/pint": "1.6.0",
+        "laravel/pint": "1.7.0",
         "laravel/sail": "1.21.2",
         "mockery/mockery": "1.5.1",
-        "nunomaduro/collision": "7.2.0",
+        "nunomaduro/collision": "7.3.2",
         "phpmd/phpmd": "2.13.0",
         "phpunit/phpunit": "10.0.17",
         "spatie/laravel-ignition": "2.0.0"
