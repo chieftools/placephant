@@ -21,7 +21,7 @@
         "mockery/mockery": "1.5.1",
         "nunomaduro/collision": "7.3.2",
         "phpmd/phpmd": "2.13.0",
-        "phpunit/phpunit": "10.0.17",
+        "phpunit/phpunit": "10.0.18",
         "spatie/laravel-ignition": "2.0.0"
     },
     "autoload": {
