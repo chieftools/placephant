@@ -2,8 +2,8 @@
     <x-slot:headerTags>
         <link rel=“canonical” href=“https://placephant.com/images” >
     </x-slot:headerTags>
-    <div class="mt-6" id="elephpants">
-        <h2 class="text-blueaccent text-3xl"><a href="#elephpants">#</a> Current ElePHPant photos</h2>
+    <div class="" id="elephpants">
+        <h1 class="text-blueaccent text-4xl mb-2"><a href="#elephpants">#</a> Current ElePHPant photos</h1>
         <p>Click on a photo to see the original file, the link will open in a new window.</p>
         <table class="table-auto">
             <tr class="border-2">

@@ -60,16 +60,33 @@
 </head>
 <body>
 <div class="container mx-auto w-full border-blue border-2 mt-6 px-10">
-    <div class=" m-1 right-0 flex flex-row float-right ">
-        <div>
-            <a href="https://gitlab.com/tjvb/placephant" target="_blank">
-                <img class="h-10 w-10" src="{{url('gitlab-logo-500.png')}}">
-            </a>
+    <div class="h-11">
+        <div class="flex flex-row float-left left-0">
+            <div class="m-1">
+                <a href="{{route('home')}}" class="text-blueaccent underline @if(Route::currentRouteName() === 'home') font-bold @endif " title="Home">
+                    Home
+                </a>
+            </div>
+            <div class="m-1">
+                -
+            </div>
+            <div class="m-1">
+                <a href="{{route('imagelist')}}" class="text-blueaccent underline @if(Route::currentRouteName() === 'imagelist') font-bold @endif " title="Current ElePHPant photos">
+                    Current ElePHPant photos
+                </a>
+            </div>
         </div>
-        <div>
-            <a href="https://github.com/tjvb/placephant" target="_blank">
-                <img class="h-8 w-8" src="{{url('github-mark.png')}}">
-            </a>
+        <div class="m-1 right-0 flex flex-row float-right ">
+            <div>
+                <a href="https://gitlab.com/tjvb/placephant" target="_blank" title="GitLab">
+                    <img class="h-10 w-10" src="{{url('gitlab-logo-500.png')}}" alt="GitLab">
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/tjvb/placephant" target="_blank" title="GitHub">
+                    <img class="h-8 w-8" src="{{url('github-mark.png')}}" alt="GitHub">
+                </a>
+            </div>
         </div>
     </div>
     {{ $slot }}

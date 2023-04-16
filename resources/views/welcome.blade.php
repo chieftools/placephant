@@ -3,12 +3,12 @@
         <link rel=“canonical” href=“https://placephant.com/” >
     </x-slot:headerTags>
     <div id="placephant">
-        <h1 class="text-blueaccent text-5xl"><a href="#placephant">#</a> Placephant</h1>
+        <h1 class="text-blueaccent text-5xl mb-2"><a href="#placephant">#</a> Placephant</h1>
         <p>
             Add simple placeholder with images of the different <a class="underline text-blueaccent" href="https://www.php.net/elephpant.php" target="_blank">ElePHPants</a>. You can use the placeholders while developing a new website till you have the needed images.
         </p>
     </div>
-    <div class="mt-4" id="usage">
+    <div class="mt-8" id="usage">
         <h2 class="text-blueaccent text-3xl"><a href="#usage">#</a> Usage</h2>
         <p>
             The basic version to get an image is to add an image with the wanted width and heigth in the path.
@@ -56,7 +56,7 @@
             </p>
         </div>
     </div>
-    <div id="examples" class="mt-8">
+    <div id="examples" class="mt-10">
         <h2 class="text-blueaccent text-3xl"><a href="#examples">#</a> Examples</h2>
         <div class="flex flex-col md:flex-row mt-2">
             <div class="basis-full md:basis-1/4 text-lg">
