@@ -24,6 +24,7 @@
 
     <title>Placephant add ElePHPant placeholders to your development site.</title>
     <link rel="stylesheet" href="{{ tailwindcss('css/app.css') }}" >
+    <link rel="shortcut icon" type="image/jpg" href="{{url('32')}}"/>
 
     @if(config('sitesettings.matomo_site_id'))
         <link rel="dns-prefetch" href="//tjvbstat.nl">
