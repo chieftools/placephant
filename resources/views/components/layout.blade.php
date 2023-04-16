@@ -59,6 +59,18 @@
 </head>
 <body>
 <div class="container mx-auto w-full border-blue border-2 mt-6 px-10">
+    <div class=" m-1 right-0 flex flex-row float-right ">
+        <div>
+            <a href="https://gitlab.com/tjvb/placephant" target="_blank">
+                <img class="h-10 w-10" src="{{url('gitlab-logo-500.png')}}">
+            </a>
+        </div>
+        <div>
+            <a href="https://github.com/tjvb/placephant" target="_blank">
+                <img class="h-8 w-8" src="{{url('github-mark.png')}}">
+            </a>
+        </div>
+    </div>
     {{ $slot }}
     <div class="mt-8 mb-6" id="credits">
         <h2 class="text-blueaccent text-3xl"><a href="#credits">#</a> Credits</h2>
