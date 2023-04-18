@@ -7,11 +7,11 @@ use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 
-final class HomeController extends Controller
+final class OptionsController extends Controller
 {
     public function __invoke(ImageList $imageList, Repository $config, Factory $viewFactory): View
     {
-        return $viewFactory->make('welcome')
+        return $viewFactory->make('options')
             ->with('imagelist', $imageList->getImages())
             ->with('config', $config->get('placephant.default_image_config'));
     }

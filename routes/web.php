@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ImageListController;
+use App\Http\Controllers\OptionsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,9 @@ Route::get('/', HomeController::class)
     ->name('home');
 
 Route::get('/images', ImageListController::class)
-->name('imagelist');
+    ->name('imagelist');
+
+Route::get('/options', OptionsController::class)
+    ->name('options');
 
 Route::fallback(ImageController::class);

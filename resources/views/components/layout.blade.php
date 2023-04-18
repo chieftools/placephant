@@ -71,6 +71,14 @@
                 -
             </div>
             <div class="m-1">
+                <a href="{{route('options')}}" class="text-blueaccent underline @if(Route::currentRouteName() === 'options') font-bold @endif " title="The options with examples">
+                    Options with examples
+                </a>
+            </div>
+            <div class="m-1">
+                -
+            </div>
+            <div class="m-1">
                 <a href="{{route('imagelist')}}" class="text-blueaccent underline @if(Route::currentRouteName() === 'imagelist') font-bold @endif " title="Current ElePHPant photos">
                     Current ElePHPant photos
                 </a>

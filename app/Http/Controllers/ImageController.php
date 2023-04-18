@@ -11,10 +11,13 @@ use League\Glide\Responses\LaravelResponseFactory;
 use League\Glide\ServerFactory;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
-class ImageController extends Controller
+final class ImageController extends Controller
 {
-    public function __construct(private readonly Repository $config, private readonly ImageList $imageList, private readonly Factory $filesystemFactory)
-    {
+    public function __construct(
+        private readonly Repository $config,
+        private readonly ImageList $imageList,
+        private readonly Factory $filesystemFactory
+    ) {
     }
 
     public function __invoke(Request $request): StreamedResponse
@@ -112,7 +115,7 @@ class ImageController extends Controller
     private function updateFitInParams(array $imageConfig, array $params): array
     {
         // See: https://glide.thephpleague.com/2.0/api/size//#fit-fit for the options
-        if (isset($imageConfig['fit']) && in_array($imageConfig['fit'], ['contain', 'max', 'fill', 'fill-max', 'stretch', 'crop'])) {
+        if (in_array($imageConfig['fit'] ?? '', ['contain', 'max', 'fill', 'fill-max', 'stretch', 'crop'])) {
             $params['fit'] = $imageConfig['fit'];
         }
 

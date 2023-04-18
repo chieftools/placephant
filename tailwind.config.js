@@ -11,7 +11,8 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                blueaccent: '#398DB9'
+                blueaccent: '#398DB9',
+                greyaccent: '#ebf2f5'
             }
         },
     },
