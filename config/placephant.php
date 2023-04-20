@@ -30,5 +30,11 @@ return [
             'author' => 'Tobias van Beek',
             'description' => 'InPHPinity standing on a present.',
         ],
+		
+        'elephpant-in-the-hedge' => [
+            'filename' => 'elephpant-in-the-hedge.jpg',
+            'author' => 'Tobias van Beek',
+            'description' => 'ElePHPant hidding in the hedge.',
+        ],
     ],
 ];
