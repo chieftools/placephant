@@ -51,5 +51,10 @@ return [
             'author' => 'Tobias van Beek',
             'description' => 'Joker on the slide.',
         ],
+		'sleeping-archie' => [
+            'filename' => 'sleeping-archie.jpg',
+            'author' => 'Tobias van Beek',
+            'description' => 'A sleeping Archie.',
+        ],
     ],
 ];
