@@ -36,5 +36,10 @@ return [
             'author' => 'Tobias van Beek',
             'description' => 'ElePHPant hidding in the hedge.',
         ],
+        'luxy-in-the-sun' => [
+            'filename' => 'luxy-in-the-sun.jpg',
+            'author' => 'Tobias van Beek',
+            'description' => 'Luxy enjoying the sun.',
+        ],
     ],
 ];
