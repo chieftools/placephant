@@ -41,5 +41,10 @@ return [
             'author' => 'Tobias van Beek',
             'description' => 'Luxy enjoying the sun.',
         ],
+        'dutchie-in-the-grass' => [
+            'filename' => 'dutchie-in-the-grass.jpg',
+            'author' => 'Tobias van Beek',
+            'description' => 'Dutchie during a walk in the grass.',
+        ],
     ],
 ];
