@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93e8fc2cc0697d4de79403ea787ff1b0",
+    "content-hash": "f067fc19a3cf7e117f7a15ae0368bedf",
     "packages": [
         {
             "name": "brick/math",
@@ -5549,16 +5549,16 @@
         },
         {
             "name": "tonysm/tailwindcss-laravel",
-            "version": "0.10.0",
+            "version": "0.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tonysm/tailwindcss-laravel.git",
-                "reference": "8402efe71545473b9d12f3d846fee994b979cec7"
+                "reference": "b48c26785cbd02ef6f412f6f76005d28db9b87f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tonysm/tailwindcss-laravel/zipball/8402efe71545473b9d12f3d846fee994b979cec7",
-                "reference": "8402efe71545473b9d12f3d846fee994b979cec7",
+                "url": "https://api.github.com/repos/tonysm/tailwindcss-laravel/zipball/b48c26785cbd02ef6f412f6f76005d28db9b87f3",
+                "reference": "b48c26785cbd02ef6f412f6f76005d28db9b87f3",
                 "shasum": ""
             },
             "require": {
@@ -5606,7 +5606,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tonysm/tailwindcss-laravel/issues",
-                "source": "https://github.com/tonysm/tailwindcss-laravel/tree/0.10.0"
+                "source": "https://github.com/tonysm/tailwindcss-laravel/tree/0.10.1"
             },
             "funding": [
                 {
@@ -5614,7 +5614,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-05-10T02:25:52+00:00"
+            "time": "2023-05-13T16:17:24+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
