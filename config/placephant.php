@@ -7,11 +7,11 @@ return [
     'image_disk' => 'public',
 
     'default_image_config' => [
-        'width' => 500,
+        'width' => 250,
         'filter' => 'none',
         'fit' => 'crop',
-        'max_width' => 5000,
-        'max_height' => 5000,
+        'max_width' => 2500,
+        'max_height' => 2500,
     ],
 
     'images' => [
@@ -30,7 +30,7 @@ return [
             'author' => 'Tobias van Beek',
             'description' => 'InPHPinity standing on a present.',
         ],
-		
+
         'elephpant-in-the-hedge' => [
             'filename' => 'elephpant-in-the-hedge.jpg',
             'author' => 'Tobias van Beek',
