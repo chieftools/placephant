@@ -55,6 +55,7 @@ return [
             'driver' => 'stack',
             'channels' => ['daily', 'sentry'],
             'ignore_exceptions' => false,
+            'attach_stacktrace' => true,
         ],
 
         'single' => [
@@ -120,6 +121,7 @@ return [
 
         'sentry' => [
             'driver' => 'sentry',
+            'attach_stacktrace' => true,
         ],
     ],
 
