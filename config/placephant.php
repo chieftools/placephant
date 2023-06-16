@@ -56,5 +56,10 @@ return [
             'author' => 'Tobias van Beek',
             'description' => 'A sleeping Archie.',
         ],
+        'dyflexis-in-the-windowsill' => [
+            'filename' => 'dyflexis-in-the-windowsill.jpg',
+            'author' => 'Tobias van Beek',
+            'description' => 'Dyflexis in the windowsill during a meetup in Eindhoven.',
+        ],
     ],
 ];
