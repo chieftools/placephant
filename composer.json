@@ -12,6 +12,7 @@
         "laravel/tinker": "2.8.1",
         "league/glide-laravel": "1.0.0",
         "sentry/sentry-laravel": "^3.4",
+        "tjvb/laravel-githash": "^1.4",
         "tonysm/tailwindcss-laravel": "0.10.1"
     },
     "require-dev": {
