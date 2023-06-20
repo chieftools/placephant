@@ -33,8 +33,16 @@ task('tailwindcss:deploy', function () {
 desc('Migrate without action');
 task('artisan:migrate')->disable();
 
+desc('Update githash cache');
+task('githash:cache', function () {
+    runLocally('GITHASH_CACHE_ENABLED=true php artisan about');
+    upload('storage/githash.cache', '{{release_path}}/storage/githash.cache');
+});
+
 // Hooks
 
 after('deploy:failed', 'deploy:unlock');
 
 before('deploy:publish', 'tailwindcss:deploy');
+
+before('deploy:vendors', 'githash:cache');

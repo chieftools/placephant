@@ -18,3 +18,4 @@ yarn-error.log
 /public/dist/
 .tailwindcss-manifest.json
 tailwindcss
+/storage/githash.cache
