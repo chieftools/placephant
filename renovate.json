@@ -1,29 +1,48 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "config:base"
+        "config:recommended"
     ],
-    "labels": ["dependencies"],
+    "labels": [
+        "dependencies"
+    ],
     "packageRules": [
         {
-            "matchManagers": ["composer"],
-            "matchPackageNames": ["php"],
+            "matchManagers": [
+                "composer"
+            ],
+            "matchPackageNames": [
+                "php"
+            ],
             "enabled": false
         },
         {
-            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-            "matchManagers": ["composer"],
+            "matchUpdateTypes": [
+                "minor",
+                "patch",
+                "pin",
+                "digest"
+            ],
+            "matchManagers": [
+                "composer"
+            ],
             "automerge": true,
             "groupName": "PHP packages"
         }
     ],
     "configMigration": true,
-    "enabledManagers": ["composer"],
+    "enabledManagers": [
+        "composer"
+    ],
     "gitAuthor": "Renovate <renovate@tjvb.nl>",
-    "lockFileMaintenance": { "enabled": true },
+    "lockFileMaintenance": {
+        "enabled": true
+    },
     "major": {
         "automerge": false,
-        "labels": ["MAJOR-Update"]
+        "labels": [
+            "MAJOR-Update"
+        ]
     },
     "platformAutomerge": true
 }
