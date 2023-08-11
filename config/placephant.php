@@ -46,12 +46,12 @@ return [
             'author' => 'Tobias van Beek',
             'description' => 'Dutchie during a walk in the grass.',
         ],
-		'joker-on-the-slide' => [
+        'joker-on-the-slide' => [
             'filename' => 'joker-on-the-slide.jpg',
             'author' => 'Tobias van Beek',
             'description' => 'Joker on the slide.',
         ],
-		'sleeping-archie' => [
+        'sleeping-archie' => [
             'filename' => 'sleeping-archie.jpg',
             'author' => 'Tobias van Beek',
             'description' => 'A sleeping Archie.',
