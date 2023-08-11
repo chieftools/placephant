@@ -116,6 +116,7 @@
             Without <a class="text-blueaccent" href="https://www.php.net/" target="_blank">PHP</a> this website would not work and the ElePHPants would never have existed.
         </p>
     </div>
+    <x-githash></x-githash>
 </div>
 </body>
 </html>
