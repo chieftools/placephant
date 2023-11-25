@@ -6936,26 +6936,26 @@
         },
         {
             "name": "tjvb/githash",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.com:tjvb/githash.git",
-                "reference": "fc53414b8c989b048a30f2a592a29943df7f364a"
+                "reference": "d41255ffd340fa9f89df2ee69aa144d3470dc77b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/tjvb%2Fgithash/repository/archive.zip?sha=fc53414b8c989b048a30f2a592a29943df7f364a",
-                "reference": "fc53414b8c989b048a30f2a592a29943df7f364a",
+                "url": "https://gitlab.com/api/v4/projects/tjvb%2Fgithash/repository/archive.zip?sha=d41255ffd340fa9f89df2ee69aa144d3470dc77b",
+                "reference": "d41255ffd340fa9f89df2ee69aa144d3470dc77b",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.0 || ^8.1 || ^8.2"
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0"
             },
             "require-dev": {
-                "beechit/json-to-code-climate-subset-converter": "^1.6",
                 "fakerphp/faker": "^1.15",
+                "infection/infection": "^0.25.0",
                 "phpmd/phpmd": "^2.10",
-                "phpstan/phpstan": "^0.12.94",
+                "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^9.5",
                 "squizlabs/php_codesniffer": "^3.6",
                 "symfony/process": "^5.3"
@@ -6992,6 +6992,10 @@
             },
             "funding": [
                 {
+                    "url": "https://github.com/sponsors/TJVB",
+                    "type": "github"
+                },
+                {
                     "url": "https://github.com/sponsors/tvbeek/",
                     "type": "github"
                 },
@@ -7000,25 +7004,25 @@
                     "type": "paypal"
                 }
             ],
-            "time": "2023-07-20T18:57:36+00:00"
+            "time": "2023-11-24T09:40:43+00:00"
         },
         {
             "name": "tjvb/laravel-githash",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.com:tjvb/laravel-githash.git",
-                "reference": "d838051e1ecffbe79c85b162bc24075c1f8de9cf"
+                "reference": "3bf2e871a853f9971b14224807125e174b90592e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/tjvb%2Flaravel-githash/repository/archive.zip?sha=d838051e1ecffbe79c85b162bc24075c1f8de9cf",
-                "reference": "d838051e1ecffbe79c85b162bc24075c1f8de9cf",
+                "url": "https://gitlab.com/api/v4/projects/tjvb%2Flaravel-githash/repository/archive.zip?sha=3bf2e871a853f9971b14224807125e174b90592e",
+                "reference": "3bf2e871a853f9971b14224807125e174b90592e",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "^8.0||^9.0||^10",
-                "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0",
                 "tjvb/githash": "^1.0"
             },
             "require-dev": {
@@ -7078,7 +7082,7 @@
                     "type": "paypal"
                 }
             ],
-            "time": "2023-02-14T20:50:23+00:00"
+            "time": "2023-11-24T10:34:55+00:00"
         },
         {
             "name": "tonysm/tailwindcss-laravel",
