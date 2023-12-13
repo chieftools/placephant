@@ -1,5 +1,5 @@
 # set the default docker image
-image: registry.gitlab.com/tjvb/phpimages:php81
+image: registry.gitlab.com/tjvb/phpimages:php82
 
 stages:
   - prepare # prepare the cache
