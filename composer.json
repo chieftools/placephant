@@ -11,7 +11,7 @@
         "laravel/sanctum": "3.3.2",
         "laravel/tinker": "2.8.2",
         "league/glide-laravel": "1.0.0",
-        "sentry/sentry-laravel": "^3.4",
+        "sentry/sentry-laravel": "^4.0",
         "tjvb/laravel-githash": "^1.4",
         "tonysm/tailwindcss-laravel": "0.11.0"
     },
