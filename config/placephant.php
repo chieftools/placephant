@@ -59,7 +59,7 @@ return [
         'dyflexis-in-the-windowsill' => [
             'filename' => 'dyflexis-in-the-windowsill.jpg',
             'author' => 'Tobias van Beek',
-            'description' => 'Dyflexis in the windowsill during a meetup in Eindhoven.',
+            'description' => 'Flexy in the windowsill during a meetup in Eindhoven. This is the elephpant from <a href="https://www.dyflexis.com/" target="_blank" class="underline text-blueaccent">Dyflexis</a>',
         ],
     ],
 ];

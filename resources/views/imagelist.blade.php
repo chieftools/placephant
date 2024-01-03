@@ -16,7 +16,7 @@
                 <tr class="border-2">
                     <td class="px-4">{{$name}}</td>
                     <td class="px-4">{{$imageData->author}}</td>
-                    <td class="px-4">{{$imageData->description}}</td>
+                    <td class="px-4">{!! $imageData->description !!}</td>
                     <td class="px-4"><a href="{{url('storage/elephpants/'. $imageData->filename)}}" target="_blank"><img src="{{url('/0/125?name='.$name)}}"></a> </td>
                 </tr>
             @endforeach
