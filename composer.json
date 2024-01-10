@@ -18,7 +18,7 @@
     "require-dev": {
         "deployer/deployer": "7.3.3",
         "fakerphp/faker": "1.23.1",
-        "laravel/pint": "1.13.7",
+        "laravel/pint": "1.13.8",
         "mockery/mockery": "1.6.7",
         "nunomaduro/collision": "7.10.0",
         "phpmd/phpmd": "2.15.0",
