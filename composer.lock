@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9918d6cf456cff1cb1d2a5d4c4e01f7b",
+    "content-hash": "a86a49386c96204722f818e24b7383fa",
     "packages": [
         {
             "name": "brick/math",
@@ -3743,20 +3743,20 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.16.1",
+            "version": "1.16.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "cc7c991555a37f9fa6b814aa03af73f88026a83d"
+                "reference": "e62eeb1fe8a8a0b2e83227a6c279c8c59f7d3a15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/cc7c991555a37f9fa6b814aa03af73f88026a83d",
-                "reference": "cc7c991555a37f9fa6b814aa03af73f88026a83d",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/e62eeb1fe8a8a0b2e83227a6c279c8c59f7d3a15",
+                "reference": "e62eeb1fe8a8a0b2e83227a6c279c8c59f7d3a15",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "^9.28|^10.0",
+                "illuminate/contracts": "^9.28|^10.0|^11.0",
                 "php": "^8.0"
             },
             "require-dev": {
@@ -3791,7 +3791,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.1"
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.2"
             },
             "funding": [
                 {
@@ -3799,7 +3799,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-23T09:04:39+00:00"
+            "time": "2024-01-11T08:43:00+00:00"
         },
         {
             "name": "symfony/console",
@@ -6419,16 +6419,16 @@
         },
         {
             "name": "tonysm/tailwindcss-laravel",
-            "version": "0.11.0",
+            "version": "0.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tonysm/tailwindcss-laravel.git",
-                "reference": "931b2c37af9dfead5acfdaca7f8a0821939855a3"
+                "reference": "a40d47b83f8abffe5d49722f0a0cbd57c0fdce9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tonysm/tailwindcss-laravel/zipball/931b2c37af9dfead5acfdaca7f8a0821939855a3",
-                "reference": "931b2c37af9dfead5acfdaca7f8a0821939855a3",
+                "url": "https://api.github.com/repos/tonysm/tailwindcss-laravel/zipball/a40d47b83f8abffe5d49722f0a0cbd57c0fdce9b",
+                "reference": "a40d47b83f8abffe5d49722f0a0cbd57c0fdce9b",
                 "shasum": ""
             },
             "require": {
@@ -6476,7 +6476,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tonysm/tailwindcss-laravel/issues",
-                "source": "https://github.com/tonysm/tailwindcss-laravel/tree/0.11.0"
+                "source": "https://github.com/tonysm/tailwindcss-laravel/tree/0.12.1"
             },
             "funding": [
                 {
@@ -6484,7 +6484,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-12T18:30:44+00:00"
+            "time": "2024-01-12T03:39:44+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
