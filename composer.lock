@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da08c772977fe91b952b191cf46f5b36",
+    "content-hash": "8b1a6163c29a9ed2f896907533042471",
     "packages": [
         {
             "name": "brick/math",
@@ -6387,27 +6387,27 @@
         },
         {
             "name": "tonysm/tailwindcss-laravel",
-            "version": "0.13.1",
+            "version": "0.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tonysm/tailwindcss-laravel.git",
-                "reference": "3e7c635e37d52642458505d6601645492566475e"
+                "reference": "673bf9880faa1a422197fcebdecc0184c78d5929"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tonysm/tailwindcss-laravel/zipball/3e7c635e37d52642458505d6601645492566475e",
-                "reference": "3e7c635e37d52642458505d6601645492566475e",
+                "url": "https://api.github.com/repos/tonysm/tailwindcss-laravel/zipball/673bf9880faa1a422197fcebdecc0184c78d5929",
+                "reference": "673bf9880faa1a422197fcebdecc0184c78d5929",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "^8.73|^9.0|^10.0",
-                "php": "^8.0",
-                "spatie/laravel-package-tools": "^1.9.2"
+                "illuminate/contracts": "^10.0|^11.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.16"
             },
             "require-dev": {
-                "nunomaduro/collision": "^5.10|^6.0",
-                "orchestra/testbench": "^6.25|^7.0|^8.0",
-                "phpunit/phpunit": "^9.5"
+                "nunomaduro/collision": "^6.0|^8.1",
+                "orchestra/testbench": "^8.0|^9.0",
+                "phpunit/phpunit": "^10.5"
             },
             "type": "library",
             "extra": {
@@ -6444,7 +6444,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tonysm/tailwindcss-laravel/issues",
-                "source": "https://github.com/tonysm/tailwindcss-laravel/tree/0.13.1"
+                "source": "https://github.com/tonysm/tailwindcss-laravel/tree/0.14.0"
             },
             "funding": [
                 {
@@ -6452,7 +6452,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-23T01:47:37+00:00"
+            "time": "2024-03-06T01:42:44+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
