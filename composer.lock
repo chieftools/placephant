@@ -6310,30 +6310,33 @@
         },
         {
             "name": "tjvb/laravel-githash",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
-                "url": "git@gitlab.com:tjvb/laravel-githash.git",
-                "reference": "3bf2e871a853f9971b14224807125e174b90592e"
+                "url": "https://gitlab.com/tjvb/laravel-githash.git",
+                "reference": "15f60d7592aa62fd027d668c89b6f07afa6ed027"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/tjvb%2Flaravel-githash/repository/archive.zip?sha=3bf2e871a853f9971b14224807125e174b90592e",
-                "reference": "3bf2e871a853f9971b14224807125e174b90592e",
+                "url": "https://gitlab.com/api/v4/projects/tjvb%2Flaravel-githash/repository/archive.zip?sha=15f60d7592aa62fd027d668c89b6f07afa6ed027",
+                "reference": "15f60d7592aa62fd027d668c89b6f07afa6ed027",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^8.0||^9.0||^10",
+                "laravel/framework": "^8.0 || ^9.0 || ^10 || ^11",
                 "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0",
                 "tjvb/githash": "^1.0"
             },
             "require-dev": {
-                "infection/infection": "^0.25.3",
-                "orchestra/testbench": "^6.21 || ^7.0 || ^8.0",
+                "friendsofphp/php-cs-fixer": "^3.52",
+                "infection/infection": "^0.25.3 || ^0.26.0 || ^0.27.0",
+                "orchestra/testbench": "^6.21 || ^7.0 || ^8.0 || ^9.0",
                 "phpmd/phpmd": "^2.10",
-                "phpstan/phpstan": "^0.12.99",
-                "phpunit/phpunit": "^9.5",
-                "squizlabs/php_codesniffer": "^3.6"
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^9.5 || ^10.0",
+                "slevomat/coding-standard": "^8.15",
+                "squizlabs/php_codesniffer": "^3.7",
+                "symplify/easy-coding-standard": "^12.1"
             },
             "type": "library",
             "extra": {
@@ -6384,7 +6387,7 @@
                     "type": "paypal"
                 }
             ],
-            "time": "2023-11-24T10:34:55+00:00"
+            "time": "2024-04-02T21:23:08+00:00"
         },
         {
             "name": "tonysm/tailwindcss-laravel",
