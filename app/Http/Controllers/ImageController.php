@@ -7,7 +7,7 @@ use App\Services\ImageList;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Filesystem\Factory;
 use Illuminate\Http\Request;
-use League\Glide\Responses\LaravelResponseFactory;
+use League\Glide\Responses\SymfonyResponseFactory;
 use League\Glide\ServerFactory;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
@@ -45,7 +45,7 @@ final class ImageController extends Controller
     private function processImage(ImageData $imageData, array $imageConfig)
     {
         $server = ServerFactory::create([
-            'response' => new LaravelResponseFactory(),
+            'response' => new SymfonyResponseFactory(),
             'source' => $this->filesystemFactory->disk($this->config->get('placephant.image_disk', 'public'))->getDriver(),
             'cache' => $this->filesystemFactory->disk()->getDriver(),
         ]);
