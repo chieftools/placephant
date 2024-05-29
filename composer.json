@@ -4,8 +4,37 @@
     "license": "MIT",
     "type": "project",
     "keywords": [
-        "framework",
-        "laravel"
+        "placephant",
+        "elephpant",
+        "TJVB"
+    ],
+    "readme": "README.md",
+    "authors": [
+        {
+            "name": "Tobias van Beek",
+            "email": "t.vanbeek@tjvb.nl",
+            "homepage": "http://www.tjvb.nl"
+        }
+    ],
+    "support": {
+        "issues": "https://gitlab.com/tjvb/placephant/-/issues",
+        "source": "https://gitlab.com/tjvb/placephant/-/tree/master",
+        "issues-github": "https://github.com/TJVB/placephant/issues",
+        "source-github": "https://github.com/TJVB/placephant/tree/main"
+    },
+    "funding": [
+        {
+            "type": "paypal",
+            "url": "https://paypal.me/tvbeek"
+        },
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/tvbeek"
+        },
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/TJVB"
+        }
     ],
     "require": {
         "php": "~8.2.0",
