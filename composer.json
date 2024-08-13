@@ -45,7 +45,7 @@
         "league/glide-symfony": "2.0.1",
         "sentry/sentry-laravel": "^4.0",
         "tjvb/laravel-githash": "^1.4",
-        "tonysm/tailwindcss-laravel": "0.14.0"
+        "tonysm/tailwindcss-laravel": "0.15.0"
     },
     "require-dev": {
         "deployer/deployer": "7.4.0",
