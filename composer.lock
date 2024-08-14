@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6c185e4edac09171d045306ea8b232d",
+    "content-hash": "d1d977d9b9b914fbdc3c5e1cdc569bbd",
     "packages": [
         {
             "name": "brick/math",
@@ -6402,7 +6402,7 @@
         },
         {
             "name": "tonysm/tailwindcss-laravel",
-            "version": "0.15.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tonysm/tailwindcss-laravel.git",
@@ -6459,7 +6459,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tonysm/tailwindcss-laravel/issues",
-                "source": "https://github.com/tonysm/tailwindcss-laravel/tree/0.15.0"
+                "source": "https://github.com/tonysm/tailwindcss-laravel/tree/1.0.0"
             },
             "funding": [
                 {
