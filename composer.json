@@ -39,7 +39,7 @@
     "require": {
         "php": "~8.2.0",
         "guzzlehttp/guzzle": "7.9.2",
-        "laravel/framework": "11.23.2",
+        "laravel/framework": "11.23.4",
         "laravel/sanctum": "4.0.2",
         "laravel/tinker": "2.9.0",
         "league/glide-symfony": "2.0.1",
