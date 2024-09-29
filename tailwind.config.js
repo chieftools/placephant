@@ -1,12 +1,8 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
     content: [
-        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
-        './vendor/laravel/jetstream/**/*.blade.php',
-        './storage/framework/views/*.php',
-        './resources/views/**/*.blade.php',
-        './resources/js/**/*.js',
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
     ],
     theme: {
         extend: {
@@ -16,9 +12,5 @@ module.exports = {
             }
         },
     },
-    plugins: [
-        require('@tailwindcss/forms'),
-        require('@tailwindcss/aspect-ratio'),
-        require('@tailwindcss/typography'),
-    ]
+    plugins: [],
 }

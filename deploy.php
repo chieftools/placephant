@@ -22,15 +22,6 @@ host('placephant.com')
     ->set('deploy_path', '~/placephant');
 
 // Tasks
-desc('Deploy tailwindcss');
-task('tailwindcss:deploy', function () {
-    $output = runLocally('php artisan tailwindcss:download -n');
-    writeln("<info>$output</info>");
-    $output = runLocally('php artisan tailwindcss:build --prod -n');
-    writeln("<info>$output</info>");
-    upload('public/.tailwindcss-manifest.json', '{{release_path}}/public/.tailwindcss-manifest.json');
-    upload('public/dist/', '{{release_path}}/public/dist/');
-});
 
 desc('Migrate without action');
 task('artisan:migrate')->disable();
@@ -38,13 +29,25 @@ task('artisan:migrate')->disable();
 desc('Update githash cache');
 task('githash:cache', function () {
     runLocally('GITHASH_CACHE_ENABLED=true php artisan about');
-    upload('storage/githash.cache', '{{release_path}}/storage/githash.cache');
+});
+
+task('build', function () {
+    runLocally('npm ci', ['timeout' => 600]);
+
+    runLocally('npm run build', ['timeout' => 600]);
+});
+
+task('deploy:update_code', function () {
+    runLocally('rm -Rf build coverage phploc phpmetrics node_modules .env public/storage');
+    upload(__DIR__ . "/", '{{release_path}}');
 });
 
 // Hooks
 
 after('deploy:failed', 'deploy:unlock');
 
-before('deploy:publish', 'tailwindcss:deploy');
+before('deploy:update_code', 'build');
+// The cache contains page cache that is invalid after a deployment
+after('deploy:symlink', 'artisan:cache:clear');
 
-before('deploy:vendors', 'githash:cache');
+before('deploy:update_code', 'githash:cache');
