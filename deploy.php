@@ -24,10 +24,12 @@ host('placephant.com')
 // Tasks
 desc('Deploy tailwindcss');
 task('tailwindcss:deploy', function () {
-    $output = run('{{bin/php}} {{release_path}}/artisan tailwindcss:download');
+    $output = runLocally('php artisan tailwindcss:download -n');
     writeln("<info>$output</info>");
-    $output = run('{{bin/php}} {{release_path}}/artisan tailwindcss:build --prod');
+    $output = runLocally('php artisan tailwindcss:build --prod -n');
     writeln("<info>$output</info>");
+    upload('public/.tailwindcss-manifest.json', '{{release_path}}/public/.tailwindcss-manifest.json');
+    upload('public/dist/', '{{release_path}}/public/dist/');
 });
 
 desc('Migrate without action');
