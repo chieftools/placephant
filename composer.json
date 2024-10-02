@@ -40,7 +40,7 @@
         "php": "~8.2.0",
         "guzzlehttp/guzzle": "7.9.2",
         "laravel/framework": "11.25.0",
-        "laravel/sanctum": "4.0.2",
+        "laravel/sanctum": "4.0.3",
         "laravel/tinker": "2.10.0",
         "league/glide-symfony": "2.0.1",
         "sentry/sentry-laravel": "^4.0",
