@@ -6124,29 +6124,32 @@
         },
         {
             "name": "tjvb/githash",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
-                "url": "git@gitlab.com:tjvb/githash.git",
-                "reference": "d41255ffd340fa9f89df2ee69aa144d3470dc77b"
+                "url": "https://gitlab.com/tjvb/githash.git",
+                "reference": "2223e7da7ffc8ba834081e223f2b657ab244f22d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/tjvb%2Fgithash/repository/archive.zip?sha=d41255ffd340fa9f89df2ee69aa144d3470dc77b",
-                "reference": "d41255ffd340fa9f89df2ee69aa144d3470dc77b",
+                "url": "https://gitlab.com/api/v4/projects/tjvb%2Fgithash/repository/archive.zip?sha=2223e7da7ffc8ba834081e223f2b657ab244f22d",
+                "reference": "2223e7da7ffc8ba834081e223f2b657ab244f22d",
                 "shasum": ""
             },
             "require": {
-                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0"
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
             "require-dev": {
                 "fakerphp/faker": "^1.15",
-                "infection/infection": "^0.25.0",
+                "infection/infection": "^0.26.10 || ^0.27.0|| ^0.28.0 || ^0.29.0",
+                "mikey179/vfsstream": "^1.6.7",
                 "phpmd/phpmd": "^2.10",
                 "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^9.5",
-                "squizlabs/php_codesniffer": "^3.6",
-                "symfony/process": "^5.3"
+                "phpunit/phpunit": "^9.5 || ^10.0 || ^11.0",
+                "slevomat/coding-standard": "^8.14",
+                "squizlabs/php_codesniffer": "^3.7",
+                "symfony/process": "^5.3",
+                "symplify/easy-coding-standard": "^12.0"
             },
             "suggest": {
                 "symfony/process": "Used rather than `shell_exec` if available (tested with ^5.3)."
@@ -6192,34 +6195,34 @@
                     "type": "paypal"
                 }
             ],
-            "time": "2023-11-24T09:40:43+00:00"
+            "time": "2024-11-20T20:04:11+00:00"
         },
         {
             "name": "tjvb/laravel-githash",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/tjvb/laravel-githash.git",
-                "reference": "15f60d7592aa62fd027d668c89b6f07afa6ed027"
+                "reference": "58498c7a23d9de8c6298e197752fb8ec52d57dd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/tjvb%2Flaravel-githash/repository/archive.zip?sha=15f60d7592aa62fd027d668c89b6f07afa6ed027",
-                "reference": "15f60d7592aa62fd027d668c89b6f07afa6ed027",
+                "url": "https://gitlab.com/api/v4/projects/tjvb%2Flaravel-githash/repository/archive.zip?sha=58498c7a23d9de8c6298e197752fb8ec52d57dd2",
+                "reference": "58498c7a23d9de8c6298e197752fb8ec52d57dd2",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "^8.0 || ^9.0 || ^10 || ^11",
-                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0",
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
                 "tjvb/githash": "^1.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.52",
-                "infection/infection": "^0.25.3 || ^0.26.0 || ^0.27.0",
+                "infection/infection": "^0.25.3 || ^0.26.0 || ^0.27.0|| ^0.28.0 || ^0.29.0",
                 "orchestra/testbench": "^6.21 || ^7.0 || ^8.0 || ^9.0",
                 "phpmd/phpmd": "^2.10",
                 "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^9.5 || ^10.0",
+                "phpunit/phpunit": "^9.5 || ^10.0 || ^11.0",
                 "slevomat/coding-standard": "^8.15",
                 "squizlabs/php_codesniffer": "^3.7",
                 "symplify/easy-coding-standard": "^12.1"
@@ -6273,7 +6276,7 @@
                     "type": "paypal"
                 }
             ],
-            "time": "2024-04-02T21:23:08+00:00"
+            "time": "2024-11-20T20:37:11+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
