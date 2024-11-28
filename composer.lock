@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a95f2b573f82413e03a79a46a21a0a7",
+    "content-hash": "bee4dd979dc4777c8447a3cf0c9a1793",
     "packages": [
         {
             "name": "brick/math",
@@ -6643,16 +6643,16 @@
         },
         {
             "name": "deployer/deployer",
-            "version": "v7.5.6",
+            "version": "v7.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deployphp/deployer.git",
-                "reference": "4f43595502870cd499a839c4ec676f58e70143c4"
+                "reference": "4900fe799ce5566d54a14103cdfd6e865b7c5d72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deployphp/deployer/zipball/4f43595502870cd499a839c4ec676f58e70143c4",
-                "reference": "4f43595502870cd499a839c4ec676f58e70143c4",
+                "url": "https://api.github.com/repos/deployphp/deployer/zipball/4900fe799ce5566d54a14103cdfd6e865b7c5d72",
+                "reference": "4900fe799ce5566d54a14103cdfd6e865b7c5d72",
                 "shasum": ""
             },
             "require": {
@@ -6693,7 +6693,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-26T15:31:46+00:00"
+            "time": "2024-11-27T21:35:20+00:00"
         },
         {
             "name": "fakerphp/faker",
