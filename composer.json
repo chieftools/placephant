@@ -41,7 +41,7 @@
         "guzzlehttp/guzzle": "7.9.2",
         "laravel/framework": "11.40.0",
         "laravel/sanctum": "4.0.8",
-        "laravel/tinker": "2.10.0",
+        "laravel/tinker": "2.10.1",
         "league/glide-symfony": "2.0.1",
         "sentry/sentry-laravel": "^4.0",
         "tjvb/laravel-githash": "^1.4"
