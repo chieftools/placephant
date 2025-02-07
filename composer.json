@@ -53,7 +53,7 @@
         "mockery/mockery": "1.6.12",
         "nunomaduro/collision": "8.5.0",
         "phpmd/phpmd": "2.15.0",
-        "phpunit/phpunit": "10.5.45",
+        "phpunit/phpunit": "11.5.7",
         "spatie/laravel-ignition": "2.9.0"
     },
     "minimum-stability": "dev",
@@ -107,6 +107,8 @@
         ],
         "phpmd": [
             "@php vendor/bin/phpmd app/ text phpmd.xml.dist"
-        ]
+        ],
+        "test": "vendor/bin/phpunit --no-coverage",
+        "test-coverage": "vendor/bin/phpunit --coverage-html build/coverage"
     }
 }
