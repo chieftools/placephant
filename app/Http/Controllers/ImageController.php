@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers;
 
 use App\ImageData;
@@ -11,7 +13,7 @@ use League\Glide\Responses\SymfonyResponseFactory;
 use League\Glide\ServerFactory;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
-final class ImageController extends Controller
+final class ImageController
 {
     public function __construct(
         private readonly Repository $config,
@@ -55,7 +57,7 @@ final class ImageController extends Controller
         $params = $this->updateFitInParams($imageConfig, $params);
         $params = $this->setSizeInParams($imageConfig, $params);
         if (isset($imageConfig['filter'])) {
-            if (in_array($imageConfig['filter'], ['g', 'bw', 'greyscale'])) {
+            if (in_array($imageConfig['filter'], ['g', 'bw', 'greyscale'], true)) {
                 $params['filt'] = 'greyscale';
             }
             if ($imageConfig['filter'] === 'sepia') {
@@ -79,11 +81,11 @@ final class ImageController extends Controller
             return $imageConfig;
         }
 
-        if (! is_numeric($sizeParts[0])) {
+        if (!is_numeric($sizeParts[0])) {
             $imageConfig['filter'] = array_shift($sizeParts);
         }
 
-        if (! isset($sizeParts[0]) || ! is_numeric($sizeParts[0])) {
+        if (!isset($sizeParts[0]) || !is_numeric($sizeParts[0])) {
             return $imageConfig;
         }
         $imageConfig['width'] = $sizeParts[0];
@@ -115,7 +117,7 @@ final class ImageController extends Controller
     private function updateFitInParams(array $imageConfig, array $params): array
     {
         // See: https://glide.thephpleague.com/2.0/api/size//#fit-fit for the options
-        if (in_array($imageConfig['fit'] ?? '', ['contain', 'max', 'fill', 'fill-max', 'stretch', 'crop'])) {
+        if (in_array($imageConfig['fit'] ?? '', ['contain', 'max', 'fill', 'fill-max', 'stretch', 'crop'], true)) {
             $params['fit'] = $imageConfig['fit'];
         }
 
@@ -130,7 +132,7 @@ final class ImageController extends Controller
         if (isset($imageConfig['height'])) {
             $params['h'] = $imageConfig['height'];
         }
-        if (isset($params['w']) && ! isset($params['h'])) {
+        if (isset($params['w']) && !isset($params['h'])) {
             $params['h'] = $params['w'];
         }
         if ($params['w'] == 0) {
