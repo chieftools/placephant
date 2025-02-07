@@ -29,6 +29,15 @@ lint:
     - find app/ -type f -name '*.php' -exec php -l {} \; | (! grep -v "No syntax errors detected" )
   dependencies: []
 
+phpmd:
+  stage: check
+  script:
+    - vendor/bin/phpmd app/ text phpmd.xml.dist
+  dependencies:
+    - prepare_cache
+  needs:
+    - prepare_cache
+
 code-style:
   stage: check
   script:
@@ -37,7 +46,6 @@ code-style:
     - prepare_cache
   needs:
     - prepare_cache
-
 
 # We check the content with vale
 vale:
@@ -49,15 +57,6 @@ vale:
     - /bin/vale --config=tools/vale/.vale.ini README.md
   needs: []
   dependencies: []
-
-phpmd:
-  stage: check
-  script:
-    - vendor/bin/phpmd app/ text phpmd.xml.dist
-  dependencies:
-    - prepare_cache
-  needs:
-    - prepare_cache
 
 test:
   stage: test
