@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers;
 
 use App\Services\ImageList;
@@ -7,7 +9,7 @@ use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 
-final class HomeController extends Controller
+final class HomeController
 {
     public function __invoke(ImageList $imageList, Repository $config, Factory $viewFactory): View
     {

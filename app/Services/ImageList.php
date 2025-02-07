@@ -22,16 +22,16 @@ final class ImageList
         $imageDir = $this->config->get('placephant.image_dir');
         $validImages = new Collection();
         foreach ($this->config->get('placephant.images', []) as $name => $imageConfig) {
-            if (! isset($imageConfig['filename'])) {
+            if (!isset($imageConfig['filename'])) {
                 $this->logger->warning('We are missing the filename for an image ', [
                     'imageConfig' => $imageConfig,
                 ]);
 
                 continue;
             }
-            $imageConfig['path'] = $imageDir.DIRECTORY_SEPARATOR.$imageConfig['filename'];
+            $imageConfig['path'] = $imageDir . DIRECTORY_SEPARATOR . $imageConfig['filename'];
 
-            if (! $disk->exists($imageConfig['path'])) {
+            if (!$disk->exists($imageConfig['path'])) {
                 $this->logger->warning('We are missing the file for an image ', [
                     'imageConfig' => $imageConfig,
                 ]);

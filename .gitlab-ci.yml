@@ -29,10 +29,10 @@ lint:
     - find app/ -type f -name '*.php' -exec php -l {} \; | (! grep -v "No syntax errors detected" )
   dependencies: []
 
-pint:
+code-style:
   stage: check
   script:
-    - vendor/bin/pint
+    - composer cs
   dependencies:
     - prepare_cache
   needs:
