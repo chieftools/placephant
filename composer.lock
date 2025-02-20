@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7da29302b5a2b92598b95ed72a6b3af7",
+    "content-hash": "c780a0bf89cb82ab5cc3226c47dd6cfa",
     "packages": [
         {
             "name": "brick/math",
@@ -7051,16 +7051,16 @@
         },
         {
             "name": "deployer/deployer",
-            "version": "v7.5.11",
+            "version": "v7.5.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deployphp/deployer.git",
-                "reference": "448761221383877d61bed6700805001f872c0ad3"
+                "reference": "efc71dac9ccc86b3f9946e75d50cb106b775aae2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deployphp/deployer/zipball/448761221383877d61bed6700805001f872c0ad3",
-                "reference": "448761221383877d61bed6700805001f872c0ad3",
+                "url": "https://api.github.com/repos/deployphp/deployer/zipball/efc71dac9ccc86b3f9946e75d50cb106b775aae2",
+                "reference": "efc71dac9ccc86b3f9946e75d50cb106b775aae2",
                 "shasum": ""
             },
             "require": {
@@ -7101,7 +7101,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-10T14:27:00+00:00"
+            "time": "2025-02-19T16:45:27+00:00"
         },
         {
             "name": "evenement/evenement",
