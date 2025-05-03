@@ -6372,27 +6372,27 @@
         },
         {
             "name": "tjvb/laravel-githash",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/tjvb/laravel-githash.git",
-                "reference": "58498c7a23d9de8c6298e197752fb8ec52d57dd2"
+                "reference": "45a0401ec4ffb92b294ed9ebbe2022ec965540d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/tjvb%2Flaravel-githash/repository/archive.zip?sha=58498c7a23d9de8c6298e197752fb8ec52d57dd2",
-                "reference": "58498c7a23d9de8c6298e197752fb8ec52d57dd2",
+                "url": "https://gitlab.com/api/v4/projects/tjvb%2Flaravel-githash/repository/archive.zip?sha=45a0401ec4ffb92b294ed9ebbe2022ec965540d4",
+                "reference": "45a0401ec4ffb92b294ed9ebbe2022ec965540d4",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^8.0 || ^9.0 || ^10 || ^11",
+                "laravel/framework": "^8.0 || ^9.0 || ^10 || ^11 || ^12",
                 "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
                 "tjvb/githash": "^1.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.52",
                 "infection/infection": "^0.25.3 || ^0.26.0 || ^0.27.0|| ^0.28.0 || ^0.29.0",
-                "orchestra/testbench": "^6.21 || ^7.0 || ^8.0 || ^9.0",
+                "orchestra/testbench": "^6.21 || ^7.0 || ^8.0 || ^9.0 || ^10.0",
                 "phpmd/phpmd": "^2.10",
                 "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^9.5 || ^10.0 || ^11.0",
@@ -6449,7 +6449,7 @@
                     "type": "paypal"
                 }
             ],
-            "time": "2024-11-20T20:37:11+00:00"
+            "time": "2025-05-02T10:10:26+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
