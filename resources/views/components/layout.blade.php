@@ -104,7 +104,7 @@
             Placephant is a project created and hosted by <a class="text-blueaccent" href="https://tjvb.nl/about" target="_blank">Tobias van Beek</a>.
         </p>
         <p>
-            The inspiration is from the previous project <a class="underline text-blueaccent" href="https://github.com/erikaheidi/placephant" target="_blank">https://github.com/erikaheidi/placephant</a> created by <a href="https://eheidi.dev/p/about" target="_blank"  class="text-blueaccent">Erika Heidi</a>.
+            The inspiration is from the previous project <a class="underline text-blueaccent" href="https://github.com/erikaheidi/placephant" target="_blank">https://github.com/erikaheidi/placephant</a> created by <a href="https://eheidi.dev/about/erika" target="_blank"  class="text-blueaccent">Erika Heidi</a>.
         </p>
         <p>
             The author of the Elephpant images are listed in the <a  class="text-blueaccent" href="{{route('imagelist')}}">Current ElePHPant photos</a> section.
