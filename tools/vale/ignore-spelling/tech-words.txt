@@ -1,5 +1,0 @@
-config
-html
-laravel
-phpstan
-PHPUnit

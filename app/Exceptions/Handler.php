@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace App\Exceptions;
 
-use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Psr\Log\LogLevel;
 use Throwable;
+use Psr\Log\LogLevel;
+use Sentry\Laravel\Integration;
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 final class Handler extends ExceptionHandler
 {
@@ -15,16 +16,14 @@ final class Handler extends ExceptionHandler
      *
      * @var array<class-string<Throwable>, LogLevel::*>
      */
-    protected $levels = [
-    ];
+    protected $levels = [];
 
     /**
      * A list of the exception types that are not reported.
      *
      * @var array<int, class-string<Throwable>>
      */
-    protected $dontReport = [
-    ];
+    protected $dontReport = [];
 
     /**
      * A list of the inputs that are never flashed to the session on validation exceptions.
@@ -42,7 +41,10 @@ final class Handler extends ExceptionHandler
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
+        $this->reportable(function (Throwable $e) {
+            Integration::captureUnhandledException($e);
+        });
     }
 }

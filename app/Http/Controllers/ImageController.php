@@ -6,21 +6,20 @@ namespace App\Http\Controllers;
 
 use App\ImageData;
 use App\Services\ImageList;
+use Illuminate\Http\Request;
+use League\Glide\ServerFactory;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Filesystem\Factory;
-use Illuminate\Http\Request;
 use League\Glide\Responses\SymfonyResponseFactory;
-use League\Glide\ServerFactory;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
-final class ImageController
+final readonly class ImageController
 {
     public function __construct(
-        private readonly Repository $config,
-        private readonly ImageList $imageList,
-        private readonly Factory $filesystemFactory
-    ) {
-    }
+        private Repository $config,
+        private ImageList $imageList,
+        private Factory $filesystemFactory,
+    ) {}
 
     public function __invoke(Request $request): StreamedResponse
     {
@@ -30,7 +29,7 @@ final class ImageController
          * 300/250 image with width and height
          * g/100/200 image in black and white
          * 100/200?filter=bw image in black and white
-         * 300/250?filter=sepia image in sepia
+         * 300/250?filter=sepia image in sepia.
          *
          * Not supported from the original project
          * v/100/200 verbose mode, show the dimension on a black and white image
@@ -39,7 +38,7 @@ final class ImageController
          * ?name=<imagename> use the image with the specified name
          */
         $imageConfig = $this->getConfig($request);
-        $imageData = $this->getRandomImage($request->get('name'));
+        $imageData   = $this->getRandomImage($request->get('name'));
 
         return $this->processImage($imageData, $imageConfig);
     }
@@ -47,9 +46,9 @@ final class ImageController
     private function processImage(ImageData $imageData, array $imageConfig)
     {
         $server = ServerFactory::create([
-            'response' => new SymfonyResponseFactory(),
-            'source' => $this->filesystemFactory->disk($this->config->get('placephant.image_disk', 'public'))->getDriver(),
-            'cache' => $this->filesystemFactory->disk()->getDriver(),
+            'response' => new SymfonyResponseFactory,
+            'source'   => $this->filesystemFactory->disk($this->config->get('placephant.image_disk', 'public'))->getDriver(),
+            'cache'    => $this->filesystemFactory->disk()->getDriver(),
         ]);
         $params = [
             'fit' => 'crop',
@@ -71,11 +70,11 @@ final class ImageController
     private function getConfig(Request $request): array
     {
         $imageConfig = $this->config->get('placephant.default_image_config', []);
-        $imageConfig['filter'] = $request->query('filter', $imageConfig['filter']);
-        $imageConfig['fit'] = $request->query('fit', $imageConfig['fit']);
 
-        $sizeParts = explode('/', $request->path());
-        array_filter($sizeParts);
+        $imageConfig['filter'] = $request->query('filter', $imageConfig['filter']);
+        $imageConfig['fit']    = $request->query('fit', $imageConfig['fit']);
+
+        $sizeParts = array_filter(explode('/', $request->path()));
 
         if (count($sizeParts) === 0) {
             return $imageConfig;
@@ -88,15 +87,18 @@ final class ImageController
         if (!isset($sizeParts[0]) || !is_numeric($sizeParts[0])) {
             return $imageConfig;
         }
+
         $imageConfig['width'] = $sizeParts[0];
 
         if (isset($sizeParts[1]) && is_numeric($sizeParts[1])) {
             $imageConfig['height'] = $sizeParts[1];
         }
+
         // lower the width and height if they are above the max.
         if (($imageConfig['width'] ?? 0) > ($imageConfig['max_width'] ?? PHP_INT_MAX)) {
             $imageConfig['width'] = $imageConfig['max_width'];
         }
+
         if (($imageConfig['height'] ?? 0) > ($imageConfig['max_height'] ?? PHP_INT_MAX)) {
             $imageConfig['height'] = $imageConfig['max_height'];
         }

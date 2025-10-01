@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace App\Http\Controllers;
 
 use App\Services\ImageList;
-use Illuminate\Contracts\Config\Repository;
-use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\Config\Repository;
 
 final class OptionsController
 {

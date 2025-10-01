@@ -1,10 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ImageController;
-use App\Http\Controllers\ImageListController;
 use App\Http\Controllers\OptionsController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ImageListController;
 
 /*
 |--------------------------------------------------------------------------

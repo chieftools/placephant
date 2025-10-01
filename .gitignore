@@ -1,22 +1,44 @@
-/build
+# Node.js
 /node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/vendor
-.env
-.env.backup
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-auth.json
-npm-debug.log
-yarn-error.log
+/yarn-error.log
+/webpack.stats.json
+/webpack.stats.json.tmp
+
+# IDE
 /.idea
-/.vscode
-/public/css/
-/public/dist/
-.tailwindcss-manifest.json
-tailwindcss
-/storage/githash.cache
+/.php_cs.cache
+/_ide_helper.php
+/.phpstorm.meta.php
+/.php-cs-fixer.cache
+/programmatic-types.graphql
+
+# GraphQL
+/hive.json
+/schema.json
+/schema.graphql
+/schema-directives.graphql
+/_lighthouse_ide_helper.php
+
+# OSX Crap
+.DS_Store
+
+# PHP Composer
+/vendor
+/composer.phar
+
+# Environment config
+.env
+.env.gen
+.env.testing
+/storage/*.key
+
+# CI
+.phpunit.cache
+.phpunit.result.cache
+
+# Asset compilation
+/public/hot
+/public/build
+
+# Filament
+/public/*/filament

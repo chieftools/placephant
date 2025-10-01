@@ -11,8 +11,7 @@ final class ImageData
         public readonly string $description,
         public readonly string $filename,
         public readonly string $path,
-    ) {
-    }
+    ) {}
 
     public static function createFromArray(array $data): ImageData
     {
