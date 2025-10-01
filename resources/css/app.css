@@ -2,6 +2,7 @@
 
 @theme {
     --color-blueaccent: #398db9;
+    --color-blueaccent-dark: #2d6f92;
     --color-greyaccent: #ebf2f5;
 }
 
@@ -20,5 +21,29 @@
     ::backdrop,
     ::file-selector-button {
         border-color: var(--color-gray-200, currentcolor);
+    }
+
+    a[href^='http']:not(.no-underline) {
+        color: var(--color-blueaccent);
+        text-decoration: underline 1px dashed var(--color-blueaccent);
+        text-underline-offset: 2px;
+
+        &:hover {
+            color: var(--color-blueaccent-dark);
+            text-decoration-style: solid;
+            text-decoration-color: var(--color-blueaccent-dark);
+        }
+    }
+
+    :not(h1, h2, h3, h4, h5, h6) > a[href^='#']:not(.no-underline) {
+        color: var(--color-blueaccent);
+        text-decoration: underline 1px dashed var(--color-blueaccent);
+        text-underline-offset: 2px;
+
+        &:hover {
+            color: var(--color-blueaccent-dark);
+            text-decoration-style: solid;
+            text-decoration-color: var(--color-blueaccent-dark);
+        }
     }
 }

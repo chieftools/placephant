@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name=author content="Tobias van Beek">
-        <meta name=description content="Placephant placeholder images with ElePHPants.">
-        <meta property="og:site_name" content="Placephant placeholder images with ElePHPants.">
-        <meta property="og:title" content="Placephant">
-        <meta name=og:description content="Placephant placeholder images with ElePHPants.">
-        <meta property="og:image" content="https://placephant.com/1900/0">
-        <meta property="og:type" content="website">
+        <meta name="description" content="Placephant: ElePHPant placeholders as a service.">
 
-        <meta name=twitter:creator content="@tvbeek">
-        <meta property="twitter:title" content="Placephant">
-        <meta name=twitter:description content="Placephant placeholder images with ElePHPants.">
+        <meta property="og:url" content="https://placephant.com">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Placephant">
+        <meta property="og:description" content="ElePHPant placeholders as a service.">
+        <meta property="og:image" content="https://placephant.com/1900/0">
+
+        <title>Placephant: ElePHPant placeholders as a service.</title>
+
+        <link rel="shortcut icon" type="image/jpg" href="{{ url('32') }}" />
 
         @if(App::isProduction())
             <script src="https://cdn.usefathom.com/script.js" data-site="REUEJWYA" defer></script>
@@ -22,10 +22,7 @@
             <meta name="robots" content="noindex">
         @endif
 
-        <title>Placephant add ElePHPant placeholders to your development site.</title>
         @vite('resources/css/app.css')
-        <link rel="shortcut icon" type="image/jpg" href="{{url('32')}}" />
-
         <style>
             body {
                 color: #212559;
@@ -38,11 +35,11 @@
         {{ $headerTags ?? '' }}
     </head>
     <body>
-        <div class="container mx-auto w-full border-blue border-2 mt-6 px-10">
+        <div class="container mx-auto w-full border-blue md:border-2 md:my-6 p-4 md:p-10">
             <div class="h-11">
                 <div class="flex flex-row float-left left-0">
                     <div class="m-1">
-                        <a href="{{route('home')}}" class="text-blueaccent underline @if(Route::currentRouteName() === 'home') font-bold @endif " title="Home">
+                        <a href="{{ route('home') }}" class="@if(Route::currentRouteName() === 'home') font-bold @endif" title="Home">
                             Home
                         </a>
                     </div>
@@ -50,8 +47,7 @@
                         -
                     </div>
                     <div class="m-1">
-                        <a href="{{route('options')}}" class="text-blueaccent underline @if(Route::currentRouteName() === 'options') font-bold @endif "
-                           title="The options with examples">
+                        <a href="{{ route('options') }}" class="@if(Route::currentRouteName() === 'options') font-bold @endif" title="The options with examples">
                             Options with examples
                         </a>
                     </div>
@@ -59,40 +55,39 @@
                         -
                     </div>
                     <div class="m-1">
-                        <a href="{{route('imagelist')}}" class="text-blueaccent underline @if(Route::currentRouteName() === 'imagelist') font-bold @endif "
-                           title="Current ElePHPant photos">
+                        <a href="{{ route('imagelist') }}" class="@if(Route::currentRouteName() === 'imagelist') font-bold @endif" title="Current ElePHPant photos">
                             Current ElePHPant photos
                         </a>
                     </div>
                 </div>
-                <div class="m-1 right-0 flex flex-row float-right ">
+                <div class="m-1 right-0 flex flex-row float-right">
                     <div>
                         <a href="https://github.com/chieftools/placephant" target="_blank" title="GitHub">
-                            <img class="h-8 w-8" src="{{url('github-mark.png')}}" alt="GitHub">
+                            <img class="h-8 w-8" src="{{ url('github-mark.png') }}" alt="GitHub">
                         </a>
                     </div>
                 </div>
             </div>
-            {{ $slot }}
+
+            {{  $slot  }}
+
             <div class="mt-8 mb-6" id="credits">
                 <h2 class="text-blueaccent text-3xl"><a href="#credits">#</a> Credits</h2>
                 <p>
-                    Placephant is a project created by <a class="text-blueaccent" href="https://tjvb.nl/about" target="_blank">Tobias van Beek</a>.
+                    Placephant is a project created by <a href="https://tjvb.nl/about" target="_blank">Tobias van Beek</a> currently maintained by <a href="https://chief.app?ref=placephant" target="_blank">Chief Tools</a>.
                 </p>
                 <p>
-                    The inspiration is from the previous project <a class="underline text-blueaccent" href="https://github.com/erikaheidi/placephant" target="_blank">https://github.com/erikaheidi/placephant</a>
-                    created by <a href="https://eheidi.dev/about/erika" target="_blank" class="text-blueaccent">Erika Heidi</a>.
+                    The inspiration is from <a href="https://github.com/erikaheidi/placephant" target="_blank">erikaheidi/placephant</a>
+                    created by <a href="https://eheidi.dev/about/" target="_blank">Erika Heidi</a>.
                 </p>
                 <p>
-                    The author of the Elephpant images are listed in the <a class="text-blueaccent" href="{{route('imagelist')}}">Current ElePHPant photos</a> section.
+                    The author of the ElePHPant images are listed in the <a href="{{ route('imagelist') }}">Current ElePHPant photos</a> section.
                 </p>
                 <p>
-                    This project couldn't exist with the creation of the ElePHPants by <a class="text-blueaccent" href="http://www.elroubio.net/" target="_blank">Vincent
-                        Pontier</a>
+                    This project couldn't exist with the creation of the ElePHPants by <a href="http://www.elroubio.net/" target="_blank">Vincent Pontier</a>
                 </p>
                 <p>
-                    Without <a class="text-blueaccent" href="https://www.php.net/" target="_blank">PHP</a> this website would not work and the ElePHPants would never have
-                    existed.
+                    Without <a href="https://www.php.net/" target="_blank">PHP</a> this website would not work and the ElePHPants would never have existed.
                 </p>
             </div>
         </div>
