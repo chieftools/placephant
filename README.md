@@ -4,7 +4,7 @@ ElePHPant placeholders as a service: [placephant.com](https://placephant.com/)
 
 ## Credits
 
-This project was created and previously hosted by [Tobias van Beek](https://tjvb.nl) and was inspired
+This project was created and previously hosted by [Tobias van Beek](https://tjvb.nl/about) and was inspired
 by [Erika Heidi](https://eheidi.dev/about/erika/) ([erikaheidi/placephant](https://github.com/erikaheidi/placephant)).
 
 ## Security Vulnerabilities
