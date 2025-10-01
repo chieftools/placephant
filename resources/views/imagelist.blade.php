@@ -25,7 +25,7 @@
     <div class="mt-6" id="newelephpants">
         <h2 class="text-blueaccent text-3xl"><a href="#newelephpants">#</a> New ElePHPant photos</h2>
         <p>
-            If you want to add a new ElePHPant image to the collection you can create a Merge Request on <a class="underline text-blueaccent" href="https://gitlab.com/tjvb/placephant" target="_blank">GitLab</a> or a Pull Request on <a class="underline text-blueaccent" href="https://github.com/tjvb/placephant" target="_blank">GitHub</a>.
+            If you want to add a new ElePHPant image to the collection you can create a Pull Request on <a class="underline text-blueaccent" href="https://github.com/chieftools/placephant" target="_blank">GitHub</a>.
         </p>
         <ol>
             <li>You need to have the permission to share this image.</li>
