@@ -86,12 +86,7 @@
         </div>
         <div class="m-1 right-0 flex flex-row float-right ">
             <div>
-                <a href="https://gitlab.com/tjvb/placephant" target="_blank" title="GitLab">
-                    <img class="h-10 w-10" src="{{url('gitlab-logo-500.png')}}" alt="GitLab">
-                </a>
-            </div>
-            <div>
-                <a href="https://github.com/tjvb/placephant" target="_blank" title="GitHub">
+                <a href="https://github.com/chieftools/placephant" target="_blank" title="GitHub">
                     <img class="h-8 w-8" src="{{url('github-mark.png')}}" alt="GitHub">
                 </a>
             </div>
@@ -101,7 +96,7 @@
     <div class="mt-8 mb-6" id="credits">
         <h2 class="text-blueaccent text-3xl"><a href="#credits">#</a> Credits</h2>
         <p>
-            Placephant is a project created and hosted by <a class="text-blueaccent" href="https://tjvb.nl/about" target="_blank">Tobias van Beek</a>.
+            Placephant is a project created by <a class="text-blueaccent" href="https://tjvb.nl/about" target="_blank">Tobias van Beek</a>.
         </p>
         <p>
             The inspiration is from the previous project <a class="underline text-blueaccent" href="https://github.com/erikaheidi/placephant" target="_blank">https://github.com/erikaheidi/placephant</a> created by <a href="https://eheidi.dev/about/erika" target="_blank"  class="text-blueaccent">Erika Heidi</a>.
