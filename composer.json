@@ -1,39 +1,21 @@
 {
     "name": "placephant/placephant",
-    "description": "Placephant.",
+    "description": "ElePHPant placeholders as a service.",
     "license": "MIT",
     "type": "project",
     "keywords": [
         "placephant",
-        "elephpant",
-        "TJVB"
+        "elephpant"
     ],
     "readme": "README.md",
-    "authors": [
-        {
-            "name": "Tobias van Beek",
-            "email": "t.vanbeek@tjvb.nl",
-            "homepage": "http://www.tjvb.nl"
-        }
-    ],
     "support": {
-        "issues": "https://gitlab.com/tjvb/placephant/-/issues",
-        "source": "https://gitlab.com/tjvb/placephant/-/tree/master",
-        "issues-github": "https://github.com/TJVB/placephant/issues",
-        "source-github": "https://github.com/TJVB/placephant/tree/main"
+        "issues": "https://github.com/chieftools/placephant/issues",
+        "source": "https://github.com/chieftools/placephant/tree/main"
     },
     "funding": [
         {
-            "type": "paypal",
-            "url": "https://paypal.me/tvbeek"
-        },
-        {
             "type": "github",
-            "url": "https://github.com/sponsors/tvbeek"
-        },
-        {
-            "type": "github",
-            "url": "https://github.com/sponsors/TJVB"
+            "url": "https://github.com/sponsors/stayallive"
         }
     ],
     "require": {
