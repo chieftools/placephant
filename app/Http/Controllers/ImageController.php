@@ -74,7 +74,7 @@ final readonly class ImageController
         $imageConfig['filter'] = $request->query('filter', $imageConfig['filter']);
         $imageConfig['fit']    = $request->query('fit', $imageConfig['fit']);
 
-        $sizeParts = array_filter(explode('/', $request->path()));
+        $sizeParts = explode('/', $request->path());
 
         if (count($sizeParts) === 0) {
             return $imageConfig;

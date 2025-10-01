@@ -15,51 +15,101 @@ return [
     ],
 
     'images' => [
-        'psr-8-elephpants' => [
+        'acrobatics-6'               => [
+            'filename'    => 'acrobatics-6.jpg',
+            'author'      => [
+                'name' => 'Alex Bouma',
+                'url'  => 'https://alex.bouma.me?ref=placephant',
+            ],
+            'description' => 'Acrobatics excersize with 6 ElePHPants.',
+        ],
+        'hotel-2'                    => [
+            'filename'    => 'hotel-2.jpg',
+            'author'      => [
+                'name' => 'Alex Bouma',
+                'url'  => 'https://alex.bouma.me?ref=placephant',
+            ],
+            'description' => 'Two ElePHPants chilling in a hotel room.',
+        ],
+        'ploi-with-audience'         => [
+            'filename'    => 'ploi-with-audience.jpg',
+            'author'      => [
+                'name' => 'Alex Bouma',
+                'url'  => 'https://alex.bouma.me?ref=placephant',
+            ],
+            'description' => 'This is the ElePHPant from <a href="https://www.ploi.io/?ref=placephant" target="_blank">Ploi</a> with an audience.',
+        ],
+        'psr-8-elephpants'           => [
             'filename'    => 'psr-8.jpg',
-            'author'      => 'Tobias van Beek',
+            'author'      => [
+                'name' => 'Tobias van Beek',
+                'url'  => 'https://tjvb.nl/about?ref=placephant',
+            ],
             'description' => 'The photo that I use for my PSR-8 cards.',
         ],
-        'elephpants-circle' => [
+        'elephpants-circle'          => [
             'filename'    => 'circle.jpg',
-            'author'      => 'Tobias van Beek',
+            'author'      => [
+                'name' => 'Tobias van Beek',
+                'url'  => 'https://tjvb.nl/about?ref=placephant',
+            ],
             'description' => 'A circle of ElePHPants.',
         ],
-        'inphpinity-on-present' => [
+        'inphpinity-on-present'      => [
             'filename'    => 'inphpinity-on-present.jpg',
-            'author'      => 'Tobias van Beek',
+            'author'      => [
+                'name' => 'Tobias van Beek',
+                'url'  => 'https://tjvb.nl/about?ref=placephant',
+            ],
             'description' => 'InPHPinity standing on a present.',
         ],
-
-        'elephpant-in-the-hedge' => [
+        'elephpant-in-the-hedge'     => [
             'filename'    => 'elephpant-in-the-hedge.jpg',
-            'author'      => 'Tobias van Beek',
+            'author'      => [
+                'name' => 'Tobias van Beek',
+                'url'  => 'https://tjvb.nl/about?ref=placephant',
+            ],
             'description' => 'ElePHPant hidding in the hedge.',
         ],
-        'luxy-in-the-sun' => [
+        'luxy-in-the-sun'            => [
             'filename'    => 'luxy-in-the-sun.jpg',
-            'author'      => 'Tobias van Beek',
+            'author'      => [
+                'name' => 'Tobias van Beek',
+                'url'  => 'https://tjvb.nl/about?ref=placephant',
+            ],
             'description' => 'Luxy enjoying the sun.',
         ],
-        'dutchie-in-the-grass' => [
+        'dutchie-in-the-grass'       => [
             'filename'    => 'dutchie-in-the-grass.jpg',
-            'author'      => 'Tobias van Beek',
+            'author'      => [
+                'name' => 'Tobias van Beek',
+                'url'  => 'https://tjvb.nl/about?ref=placephant',
+            ],
             'description' => 'Dutchie during a walk in the grass.',
         ],
-        'joker-on-the-slide' => [
+        'joker-on-the-slide'         => [
             'filename'    => 'joker-on-the-slide.jpg',
-            'author'      => 'Tobias van Beek',
+            'author'      => [
+                'name' => 'Tobias van Beek',
+                'url'  => 'https://tjvb.nl/about?ref=placephant',
+            ],
             'description' => 'Joker on the slide.',
         ],
-        'sleeping-archie' => [
+        'sleeping-archie'            => [
             'filename'    => 'sleeping-archie.jpg',
-            'author'      => 'Tobias van Beek',
+            'author'      => [
+                'name' => 'Tobias van Beek',
+                'url'  => 'https://tjvb.nl/about?ref=placephant',
+            ],
             'description' => 'A sleeping Archie.',
         ],
         'dyflexis-in-the-windowsill' => [
             'filename'    => 'dyflexis-in-the-windowsill.jpg',
-            'author'      => 'Tobias van Beek',
-            'description' => 'Flexy in the windowsill during a meetup in Eindhoven. This is the elephpant from <a href="https://www.dyflexis.com/" target="_blank" class="underline text-blueaccent">Dyflexis</a>',
+            'author'      => [
+                'name' => 'Tobias van Beek',
+                'url'  => 'https://tjvb.nl/about?ref=placephant',
+            ],
+            'description' => 'Flexy in the windowsill during a meetup in Eindhoven. This is the ElePHPant from <a href="https://www.dyflexis.com/?ref=placephant" target="_blank">Dyflexis</a>',
         ],
     ],
 ];
