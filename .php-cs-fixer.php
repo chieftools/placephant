@@ -24,6 +24,7 @@ $config
         'single_line_throw'                                => false,
         'single_line_empty_body'                           => true,
         'single_blank_line_at_eof'                         => true,
+        'stringable_for_to_string'                         => false,
         'no_superfluous_phpdoc_tags'                       => false,
         'class_attributes_separation'                      => false,
         'linebreak_after_opening_tag'                      => true,

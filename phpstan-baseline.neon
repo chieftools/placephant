@@ -1,0 +1,7 @@
+parameters:
+	ignoreErrors:
+		-
+			rawMessage: 'Strict comparison using === between int<1, max> and 0 will always evaluate to false.'
+			identifier: identical.alwaysFalse
+			count: 1
+			path: app/Http/Controllers/ImageController.php
