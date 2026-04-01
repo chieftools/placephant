@@ -24,7 +24,7 @@
         "laravel/sanctum": "4.3.*",
         "laravel/tinker": "2.11.*",
         "league/glide-symfony": "2.0.*",
-        "sentry/sentry-laravel": "4.21.*"
+        "sentry/sentry-laravel": "4.24.*"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "3.6.*",
