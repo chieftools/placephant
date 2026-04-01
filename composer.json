@@ -22,7 +22,7 @@
         "guzzlehttp/guzzle": "7.10.*",
         "laravel/framework": "12.53.*",
         "laravel/sanctum": "4.3.*",
-        "laravel/tinker": "2.11.*",
+        "laravel/tinker": "3.0.*",
         "league/glide-symfony": "2.0.*",
         "sentry/sentry-laravel": "4.21.*"
     },
