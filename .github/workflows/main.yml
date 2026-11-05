@@ -17,17 +17,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup PHP cache
         uses: shivammathur/cache-extensions@v1
         id: php-ext-cache
         with:
-          php-version: '8.4'
+          php-version: '8.5'
           extensions: zip
-          key: php84-cache
+          key: php85-cache
       - name: Cache PHP extensions
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ${{ steps.php-ext-cache.outputs.dir }}
           key: ${{ steps.php-ext-cache.outputs.key }}
@@ -35,11 +35,11 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.4'
+          php-version: '8.5'
           extensions: zip
           coverage: none
       - name: Cache Composer dependencies
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         id: composer-cache
         with:
           path: vendor
@@ -59,17 +59,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup PHP cache
         uses: shivammathur/cache-extensions@v1
         id: php-ext-cache
         with:
-          php-version: '8.4'
+          php-version: '8.5'
           extensions: zip
-          key: php84-cache
+          key: php85-cache
       - name: Cache PHP extensions
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ${{ steps.php-ext-cache.outputs.dir }}
           key: ${{ steps.php-ext-cache.outputs.key }}
@@ -77,11 +77,11 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.4'
+          php-version: '8.5'
           extensions: zip
           coverage: none
       - name: Cache Composer dependencies
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         id: composer-cache
         with:
           path: vendor
@@ -89,19 +89,17 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
 
       - name: Cache php-cs-fixer cache
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         id: php-cs-fixer-cache
         with:
           path: .php-cs-fixer.cache
           key: ${{ runner.os }}-php-cs-fixer-${{ github.ref }}-${{ hashFiles('.php-cs-fixer.php') }}-${{ github.run_id }}
           restore-keys: |
-            ${{ runner.os }}-php-cs-fixer-${{ github.ref }}-${{ hashFiles('php-cs-fixer.php') }}-
+            ${{ runner.os }}-php-cs-fixer-${{ github.ref }}-${{ hashFiles('.php-cs-fixer.php') }}-
             ${{ runner.os }}-php-cs-fixer-${{ github.ref }}-
             ${{ runner.os }}-php-cs-fixer-
       - name: Validate code style
         run: composer phpcs:ci
-        env:
-          PHP_CS_FIXER_IGNORE_ENV: 1
 
   phpstan:
     name: phpstan
@@ -109,17 +107,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup PHP cache
         uses: shivammathur/cache-extensions@v1
         id: php-ext-cache
         with:
-          php-version: '8.4'
+          php-version: '8.5'
           extensions: zip
-          key: php84-cache
+          key: php85-cache
       - name: Cache PHP extensions
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ${{ steps.php-ext-cache.outputs.dir }}
           key: ${{ steps.php-ext-cache.outputs.key }}
@@ -127,11 +125,11 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.4'
+          php-version: '8.5'
           extensions: zip
           coverage: none
       - name: Cache Composer dependencies
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         id: composer-cache
         with:
           path: vendor
@@ -139,7 +137,7 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
 
       - name: Cache PHPStan cache
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         id: phpstan-cache
         with:
           path: storage/tmp/phpstan
@@ -162,17 +160,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup PHP cache
         uses: shivammathur/cache-extensions@v1
         id: php-ext-cache
         with:
-          php-version: '8.4'
+          php-version: '8.5'
           extensions: zip, openssl
-          key: php84-cache
+          key: php85-cache
       - name: Cache PHP extensions
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ${{ steps.php-ext-cache.outputs.dir }}
           key: ${{ steps.php-ext-cache.outputs.key }}
@@ -180,11 +178,11 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.4'
+          php-version: '8.5'
           extensions: zip, openssl
           coverage: none
       - name: Cache Composer dependencies
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         id: composer-cache
         with:
           path: vendor
@@ -204,7 +202,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Check for security issues in dependencies
         uses: symfonycorp/security-checker-action@v5
@@ -214,10 +212,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Cache Yarn dependencies
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         id: yarn-cache
         with:
           path: node_modules
@@ -234,10 +232,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Cache Yarn dependencies
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         id: yarn-cache
         with:
           path: node_modules
